@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="codecademyunit6csspositioning.css"/>
+<title>Codecademy Unit 6 CSS Positioning</title>
+</head>
+<body>
+<!-- elements populate the page in what's known as the CSS box model. Each HTML element is like a tiny box or container that holds the pictures and text you specify. -->
+<!-- https://s3.amazonaws.com/codecademy-blog/assets/ae09140c.png -->
+<p>Positioning property use the display property.  There are four possible values:</p>
+<ul>
+<li>block: This makes the element a block box. It won't let anything sit next to it on the page! It takes up the full width no matter how much or how little content you put in.  Default element.</li>
+<li>inline-block: This makes the element a block box, but will allow other elements to sit next to it on the same line.  Useful for navigation bars at the top of a main page.</li>
+<li>inline: This makes the element sit on the same line as another element, but without formatting it like a block. They don't keep their dimensions.  It only takes up as much width as it needs (not the whole line).  The inline is better suited for HTML elements that are blocks by default, such as headers and paragraphs.</li>
+<li>none: This makes the element and its content disappear from the page entirely!</li>
+
+<div id="one"></div>
+<div id="two"></div>
+<div id="three"></div>
+<div id="four"></div>
+<br>
+
+<img src="codecademyblogboxmodelcss.png" alt="">
+<br>
+<ul>
+	<li>The margin is the space around the element. The larger the margin, the more space between our element and the elements around it. We can adjust the margin to move our HTML elements closer to or farther from each other.</li>
+	<li>The border is the edge of the element. It's what we've been making visible every time we set the border property.</li>
+	<li>The padding is the spacing between the content and the border. We can adjust this value with CSS to move the border closer to or farther from the content.</li>
+	<li>The content is the actual "stuff" in the box. If we're talking about a &lt;p&gt; element, the "stuff" is the text of the paragraph.</li>
+	<li>You'll see abbreviations like TM, TB, and TP in the diagram. These stand for "top margin," "top border," and "top padding." As we'll see, we can adjust the top, right, left, and bottom padding, border, and margin individually.</li>
+</ul>
+
+<h2>Margin</h2>
+<p>Adjusting our margins not only moves our element relative to other elements on the page, but also relative to the "walls" of the HTML document.   Set its margin to auto, this tells the document to automatically put equal left and right margins on our element, centering it on the page.  margin: auto;  It didn't work below.</p>
+<p>If you want to specify a particular margin, you can do it like this:
+<br>
+margin-top: /*some value*/
+<br>
+margin-right: /*some value*/
+<br>
+margin-bottom: /*some value*/
+<br>
+margin-left: /*some-value*/
+<br>
+You can also set an element's margins all at once: you just start from the top margin and go around clockwise (going from top to right to bottom to left). For instance, margin: 1px 2px 3px 4px; will set a top margin of 1 pixel, a right margin of 2, a bottom of 3, and a left of 4.
+</p>
+<div id="margin"></div>
+
+<h2>Padding</h2>
+<p>The padding is the space between your border and your innermost layer: the actual content.</p>
+<p>Padding can be set in two ways, just like your margins. You can either select them individually, like this:
+<br>
+padding-top: /*some value*/
+<br>
+padding-right: /*some value*/
+<br>
+padding-bottom: /*some value*/
+<br>
+padding-left: /*some-value*/
+<br>
+Or select them all in one declaration, like this: padding: value value value value;
+<br>
+You should also know that if you want your padding to be the same for all four sides, you can declare that value only once. padding: 10px will give your HTML element 10 pixels of padding on all sides.
+</p>
+<div id="padding"></div>
+
+<p>If you want to move an element in the other direction, you can give CSS a negative value: margin-left: -20px will move the element twenty pixels to the left.  You can move HTML elements clear off the page with negative margins values.</p>
+
+<h2>Float</h2>
+
+<p>How do we determine where they go on the page?  One way is to use floats. When you float an element on the page, you're telling the webpage: "I'm about to tell you where to put this element, but you have to put it into the flow of other elements." This means that if you have several elements all floating, they all know the others are there and don't land on top of each other.</p>
+
+<div id ="floattotheright"></div>
+<br>
+
+<p id ="floattotheleft">We can use floated elements to naturally divide our pages into different sections.</p>
+<div id ="floattotherightred"></div>
+</body>
+</html>

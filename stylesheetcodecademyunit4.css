@@ -1,0 +1,15 @@
+/* The general format is selector { property: value; } A selector can be any HTML element such as p, img, or table.  A property is an aspect of a selector. For instance, you can change the font-family, color, and font-size of the text on your web pages (in addition to many more).  A value is a possible setting for a property. color can be red, blue, black, or almost any color; font-family can be a whole bunch of different fonts; and so on.  End each property-value with a semi-colon.  */
+/*  The font-size unit em is a relative measure: one em is equal to the default font size on whatever screen the user is using.  It just says, "Hey, 1em is the font size that you normally use, so 2em is twice as big and 0.5em is half that size!"  */;
+/* How many fonts does CSS know?  The answer is: it depends. Most computers will understand popular fonts like Verdana, Courier, and Garamond, but each individual computer has different fonts installed on it. The good news is that CSS has some built-in defaults meant to ensure your users see what you intend. They are:  serif, sans-serif, cursive.   You can tell CSS to try several, going from one to the next if the one you want isn't available; e.g. p { font-family: Tahoma, Verdana, sans-serif; } CSS tries Tahoma, if user's computer doesn't have Tahoma, it tries Verdana next, 
+ */
+
+span {font-family: cursive; background-color: yellow;}
+p {color: green; font-family: Garamond; font-size: 24px;}
+h3 {color: #cc6666; font-family: Vivaldi, Courier; }
+h2 {color: #8a2be2; font-family: Verdana, sans-serif;}
+h1 {font-family: Times, serif;}
+div {background-color: #cc0000; height: 100px; width: 100px;} /* Created a 100x100 red color square */
+td {height: 50px; border: 1px; border-color: dashed blue;}
+table {border: 1px; border-color: solid black;}
+a {color: #cc0000; text-decoration: none;}
+img {height: 100px; width: 300px; border: 1px; border-style: solid; border-color: #4682b4;}

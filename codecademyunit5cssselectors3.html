@@ -1,0 +1,63 @@
+<!-- any HTML element can be a CSS selector! You can modify <ul>s, <table>s, and even the entire <body> by selecting ul, table, and body, respectively. -->
+<!DOCTYPE html>
+<html> <!--The trunk of the tree!-->
+<head> <!--Child of html, parent of title, sibling of body-->
+<link type="text/css" rel="stylesheet" href="codecademyunit5cssselectors3.css"/>
+<title>Codecademy Unit 5 CSS Selectors 3</title> <!--Immediate child of head, child of head AND html-->
+</head>
+<body> <!--Child of html, parent of p, sibling of head-->
+<p></p> <!--Immediate child of body, child of body AND html-->
+<a href="http://www.codecademy.com/">Codecademy!</a>
+<ul>
+	<li><a href="http://www.codecademy.com/learn" id="cursivelink">Learn</a></li>
+	<li><a href="http://www.codecademy.com/create/creator" id="cursivelink">Teach</a></li>
+	<li><a href="http://www.codecademy.com/edit_account/basic_info" id="cursivelink">Settings</a></li>
+</ul>
+
+<p>Introduction: Cascading with CSS</p>
+<div>
+<p>Synopsis: When you set a property of a selector like 'p' to a certain value, that value applies to <em>all</em> p tags.  If, however, you change that same property to a different value for a more specific instance of p, that change will <em>override</em> the 'general rule'.</p>
+<ul>
+	<li><p>If you say p { font-family: Garamond}, all 'p's will have the font Garamond.</p></li>
+	<li><p>BUT if you say li p {font-family: Verdana}, 'p's outside of 'li's will be in Garamond, and 'p's INSIDE 'li's will be in Verdana.</p></li>
+	<li><p>The more specific your selectors are, the higher importance CSS gives to the styling you apply!</p></li>
+</ul>
+</div>
+<p>Summary: Greater specificity makes CSS prioritize that particular styling.</p>
+
+<h3 class="red">I'm an h3 header in the red class!  Class is . or periods like classes in high school</h3>
+<p></p>
+<h3>I'm just a regular old h3 header.</h3>
+<p class="red">I'm a paragraph in the red class!</p>
+<p>I'm just a regular old paragraph.</p>
+<p id="rogue">I'm a rogue paragraph! I do what I want! ID is # IDs are great for when you have exactly one element that should receive a certain kind of styling.  Apply style to a single instance of a selector, rather than all instances.</p>
+<!-- IDs are great for when you have exactly one element that should receive a certain kind of styling. apply style to a single instance of a selector, rather than all instances. -->
+<h1 id="underline">Summary Two</h1>
+<h2 id ="intro">Introduction</h2>
+<h3 class="standout">Classes and IDs in CSS</h3>
+<p class="standout">Classes and IDs are super easy in CSS. You're using them right now!</p>
+<h3>Regular HTML Selectors</h3>
+<p>If you don't bother with a class or ID, an HTML element just gets the regular CSS styling for that element—or the default styling if you don't specify any particular styling on the stylesheet.</p>
+
+<h1 id="underline">pseudo-class selector</h1>
+<p>A pseudo-class selector is a way of accessing HTML items that aren't part of the document tree (remember the tree structure we talked about earlier?). For instance, it's very easy to see where a link is in the tree. But where would you find information about whether a link had been clicked on or not? It isn't there! Another way to say, an example is removing the underline in an anchor link when the cursor is hovering the anchor link.</p>
+<p>The CSS syntax for pseudo selectors is selector:pseudo-class_selector { property: value; }</p>
+<div>
+<a href="http://www.amazon.com">Amazon</a>
+<br>
+<a href="http://www.innovateinfinitely.com">ININ</a>
+<br>
+<a href="http://www.cow.com">Cow</a>
+<p>Another useful pseudo-class selector is first-child. It's used to apply styling to only the elements that are the first children of their parents.</p>
+<div>
+	<p>I'm the first child!</p>  <!-- first child is cursive -->  
+	<p>We're not.</p>  <!-- second child font-family is Tahoma -->
+	<p>We're not.</p>  <!-- nth child which is 3rd is color #cc0000 -->
+	<p>We're not.</p>  <!-- nth child which is 4th background color #00ff00 -->
+	<p>We're not.</p>  <!-- nth child which is 5th font-size 22px -->
+	<p>We're not.</p>
+	<p>We're not.</p>			
+</div>
+</div>
+</body>
+</html>

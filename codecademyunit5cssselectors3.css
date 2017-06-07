@@ -1,0 +1,82 @@
+/*ul li a {
+	text-decoration: none;
+	font-family: cursive;
+}*/
+
+#cursivelink{ /*better than using HTML elements starting from ul li a */
+	text-decoration: none;
+	font-family: cursive;
+}
+
+p {
+	font-family: Garamond;
+	font-weight: bold;
+}
+
+div p {
+	color: #7ac5cd;
+}
+
+ul li p {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.red {
+	color: red;
+}
+
+#rogue {
+	color: #FF00FF;
+	font-weight: bold;
+	font-family: cursive;
+}
+
+#underline {
+	text-decoration: underline;
+}
+
+#intro {
+	color: #B83C3A;
+}
+
+.standout {
+	color: #f7ac5f;
+	font-family: Verdana;
+}
+
+a:link{
+	text-decoration: none;
+	color: #008b45;
+}
+
+a:hover{
+	color: #00ff00;
+}
+
+a:visited{
+	color: #ee9a00;
+}
+
+/* first child is cursive */
+/*p:first-child {
+    font-family: cursive;
+}
+*/
+
+/* Nth childs are below */
+/*p:nth-child(2) {
+	font-family: Tahoma;
+}
+
+p:nth-child(3) {
+	color: #cc0000;	
+}
+p:nth-child(4) {
+	background: #00ff00	
+}
+
+p:nth-child(5) {
+	font-size: 22px;
+}
+*/

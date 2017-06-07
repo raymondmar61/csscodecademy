@@ -1,0 +1,66 @@
+<!-- The stylesheet.css tab contains all the CSS styling information: where HTML elements should go, what color they should be, how big they should be, and more. -->
+<!-- CSS (which stands for Cascading Style Sheets) is a language used to describe the appearance and formatting of your HTML.  A style sheet is a file that describes how an HTML file should look. -->
+<!-- We say these style sheets are cascading because the sheets can apply formatting when more than one style applies. For instance, if you say all paragraphs should have blue font, but you specifically single out one paragraph to have red font, CSS can do that! -->
+<!-- There are two main reasons for separating your form/formatting (CSS) from your functional content/structure (HTML):  1.You can apply the same formatting to several HTML elements without rewriting code (e.g. style="color:red":) over and over.  2.  You can apply similar appearance and formatting to several HTML pages from a single CSS file  -->
+<!-- There are two ways to put CSS in one place. This first is to put your CSS between <style></style> tags, right in the same file as your HTML. These <style> tags go inside the <head></head> of your webpage (which is commented out)  The second better way is a separate .css file.  Add a link type in the header.  -->
+
+<!doctype html>
+<html>
+<head>
+<!-- <style>
+	p{color: purple;}
+</style> -->
+<link type="text/css" rel="stylesheet" href="stylesheetcodecademyunit4.css">
+<meta charset="UTF-8">
+<title>Codecademy Unit 4 CSS: An Overview</title>
+</head>
+<body>
+<p>Much of this is regular text, but some of it is <span>fancy</span>!
+We can use our <span>newly fancified font</span> to add some
+<span>flair</span> to our website. It'd be a <span>royal pain</span> 
+to make each of these span tags <span>fancy</span> individually,
+but it's a cinch with <span>CSS</span>!</p>
+
+<p>You're about to style this paragraph with CSS all on your own!</p>
+
+<h3>What's CSS for?</h3>
+<p>CSS is for styling HTML pages!</p>
+<h3>Why use it?</h3>
+<p>It makes webpages look <span>really rad</span>.</p>
+<h3>What do I think of it?</h3>
+<p>It's awesome!</p>
+
+<h3>Recent Projects</h3>
+<p>I've started learning HTML and CSS. I hope to create my own website soon!</p>
+
+<h3>Roses are red.</h3>
+<h2>Violets are blue!</h2>
+
+<table>
+<thead>
+	<th colspan="3">Nine Blocks!</th>
+</thead>
+<tbody>
+	<tr>
+		<td>1</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</tbody>
+</table>
+
+<p>The below link goes to Google!</p>
+<a href="http://www.google.com/">Google</a>
+<img src="purple.jpg">
+</body>
+</html>
